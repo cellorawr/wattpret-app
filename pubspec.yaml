@@ -1,0 +1,28 @@
+name: flutter_application_1
+description: Tiruan tampilan aplikasi Wattpret (UI clone) dengan Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.0
+  image_picker: ^1.1.2
+  camera: ^0.11.0+2
+  http: ^1.6.0
+  shared_preferences: ^2.5.6
+
+dev_dependencies: 
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo_w.png
+    - assets/logo_google.png
+    - assets/covers/
