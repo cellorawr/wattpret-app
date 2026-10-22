@@ -14,7 +14,7 @@ Proyek ini dibuat untuk Ujian Tengah Semester (UTS) mata kuliah **Pemrograman Ap
 | Frontend | Flutter (Dart) |
 | Backend | Laravel 13 (PHP 8.3) + Laravel Sanctum |
 | Database | MySQL |
-| Video presentasi & demo | (link YouTube menyusul setelah diunggah) |
+| Video presentasi & demo | https://youtu.be/tl7QZ99o5kY |
 
 ## Anggota Kelompok
 
@@ -120,16 +120,24 @@ Menu Pengaturan memuat semua halaman berikut.
 
 ## Struktur Repositori
 
-```
-wattpret/
-├── README.md
-├── docs/
-│   └── logo.png    # Logo untuk README
-├── mobile/     # Aplikasi Flutter (frontend)
-└── backend/    # REST API Laravel + migration & seeder database
-```
+Proyek ini terdiri dari dua repositori:
 
-Skema database dibuat lewat migration di `backend/database/migrations/`, dan data contoh (87 cerita dan akun demo) lewat seeder di `backend/database/seeders/`.
+| Repositori | Isi | Tautan |
+|---|---|---|
+| wattpret-app | Aplikasi Flutter (frontend) | https://github.com/cellorawr/wattpret-app |
+| wattpret-api | REST API Laravel, migration, dan seeder database | https://github.com/cellorawr/wattpret-api |
+
+wattpret-app/
+├── lib/ (api_service.dart, screens/, dan lainnya)
+├── android/
+├── assets/
+└── pubspec.yaml
+
+wattpret-api/
+├── app/
+├── routes/api.php
+├── database/migrations/
+└── database/seeders/
 
 ## Arsitektur Singkat
 
